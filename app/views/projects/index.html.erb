@@ -8,7 +8,7 @@
   </div>
   <div class="col-md-6 col-md-offset-3">
     <% @projects.each do |project| %>
-      <h2><%= project.name %></h2>
+    <h2><a href="/projects/<%= project.id %>"><%= project.name %></a></h2>
     <% end %>
   </div>
 </div>
