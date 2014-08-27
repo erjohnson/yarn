@@ -32,6 +32,7 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     if @project.update(params[:project])
+      flash[:notice] = "#{@project.name} has been updated."
       redirect_to("/projects/#{@project.id}")
     else
       render('projects/edit.html.erb')
@@ -41,7 +42,7 @@ class ProjectsController < ApplicationController
   def destroy
     @project = Project.find(params[:id])
     @project.destroy
-    flash[:notice] = "Your project was deleted."
+    flash[:alert] = "Your project was deleted."
     redirect_to("/projects")
   end
 end
