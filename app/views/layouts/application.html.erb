@@ -11,6 +11,9 @@
     <a class="navbar-brand" href="/">Yarn</a>
   </nav>
   <div class="container-fluid">
+    <%= flash[:alert] %>
+    <%= flash[:notice] %>
+
     <%= yield %>
   </div>
 </body>
