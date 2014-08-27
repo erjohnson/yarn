@@ -2,7 +2,7 @@ class CreateStories < ActiveRecord::Migration
   def change
     create_table :stories do |t|
       t.string :name
-      t.done :boolean
+      t.boolean :done
       t.belongs_to :project
     end
   end
