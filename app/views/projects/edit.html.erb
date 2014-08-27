@@ -3,14 +3,7 @@
     <h1>Edit <%= @project.name %></h1>
     <br>
     <br>
-    <% if @project.errors.any? %>
-    <h3>Please fix these errors:</h3>
-    <ul>
-      <% @project.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-      <% end %>
-    </ul>
-    <% end %>
+    <%= render('layouts/errors', :object => @project) %>
     <form action="/projects/<%= @project.id %>" method="post">
       <input name="_method" type="hidden" value="patch">
       <%= render('form') %>
