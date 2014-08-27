@@ -14,4 +14,11 @@ class StoriesController < ApplicationController
       render('stories/new.html.erb')
     end
   end
+
+  def destroy
+    project = Project.find(params[:project_id])
+    @story = project.stories.find(params[:id])
+    @story.destroy
+    redirect_to("/projects/#{@story.project_id}")
+  end
 end
