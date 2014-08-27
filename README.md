@@ -3,7 +3,7 @@
 This project is for the [Ruby on Rails Basics assessment](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment) at [Epicodus](http://www.epicodus.com/).
 
 
-**User Stories** is a user story management app.  Create projects, add users to a project, and give each user a set of stories.  
+**User Stories** is a user story management app.  A user can create projects and give each project a set of stories.  
 
 In software development a [user story](http://en.wikipedia.org/wiki/User_story) is one or more sentences in the everyday language of the end user that captures what a user does, needs, or wants to do within the context of an application. User stories provide a description or use-case for functions an application should provide.
 
