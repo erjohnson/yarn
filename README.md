@@ -4,13 +4,13 @@ This project is for the [Ruby on Rails Basics assessment](http://www.learnhowtop
 
 **Yarn** is a user story management app.  A user can create projects and give each project a set of stories.
 
+[View Demo](http://yarn-app.herokuapp.com/)
+
 In software development a [user story](http://en.wikipedia.org/wiki/User_story) is one or more sentences in the everyday language of the end user that captures what a user does, needs, or wants to do within the context of an application. User stories provide a description or use-case for functions an application should provide.
 
 An example user story:
 
 >As a store-owner, I want to search for my customers by their first and last names.
-
-[View Demo](http://yarn-app.herokuapp.com/)
 
 
 ## Installation
@@ -30,6 +30,8 @@ cd $SOME_PATH/yarn
 ```
 
 Next run `bundle install --without production` to download the appropriate dependencies.
+
+Then execute `rake db:create` to create the database and `rake db:schema:load` to set up the tables.
 
 Start up the app by running `rails server` and visiting `http://localhost:3000/` in your web browser.
 
