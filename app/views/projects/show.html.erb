@@ -2,7 +2,6 @@
   <div class="col-md-6 col-md-offset-3">
     <h1><%= @project.name %></h1>
     <br>
-    <p><a href="/projects/<%= @project.id %>/stories/new">Add Story</a></p>
     <p><a href="/projects/<%= @project.id %>/edit">Edit Project</a></p>
     <p><a href="/projects/<%= @project.id %>"
       data-confirm="You sure?"
@@ -14,6 +13,9 @@
     <p><a><%= @project.link %></a></p>
     <br>
     <h3>User Stories</h3>
+    <br>
+    <p><a href="/projects/<%= @project.id %>/stories/new">Add Story</a></p>
+    <br>
     <ul>
       <% @project.stories.each do |story| %>
       <li><p><%= story.name %></p>&nbsp;&nbsp;
