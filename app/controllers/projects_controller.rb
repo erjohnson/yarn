@@ -41,6 +41,7 @@ class ProjectsController < ApplicationController
   def destroy
     @project = Project.find(params[:id])
     @project.destroy
-    render('projects/destroy.html.erb')
+    flash[:notice] = "Your project was deleted."
+    redirect_to("/projects")
   end
 end
