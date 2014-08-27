@@ -2,7 +2,6 @@
 
 This project is for the [Ruby on Rails Basics assessment](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment) at [Epicodus](http://www.epicodus.com/).
 
-
 **Yarn** is a user story management app.  A user can create projects and give each project a set of stories.
 
 In software development a [user story](http://en.wikipedia.org/wiki/User_story) is one or more sentences in the everyday language of the end user that captures what a user does, needs, or wants to do within the context of an application. User stories provide a description or use-case for functions an application should provide.
@@ -11,15 +10,42 @@ An example user story:
 
 >As a store-owner, I want to search for my customers by their first and last names.
 
+[View Demo](http://yarn-app.herokuapp.com/)
+
 
 ## Installation
 
-wip
+Ensure that you have the latest stable versions of [Ruby](https://www.ruby-lang.org/en/), [Ruby on Rails](http://rubyonrails.org/), [Bundler](http://bundler.io/) and [PostgreSQL](http://www.postgresql.org/) installed.
+
+Download the zip of this repository or clone it via git by executing this command in your terminal:
+
+```
+git clone https://github.com/erjohnson/yarn.git
+```
+
+Navigate to the **Yarn** project directory in your terminal:
+
+```
+cd $SOME_PATH/yarn
+```
+
+Next run `bundle install --without production` to download the appropriate dependencies.
+
+Start up the app by running `rails server` and visiting `http://localhost:3000/` in your web browser.
 
 
 ## Dependencies
 
-wip
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Ruby on Rails](http://rubyonrails.org/)
+* [PostgreSQL](http://www.postgresql.org/)
+* [Bundler](http://bundler.io/)
+* [PG](http://deveiate.org/code/pg/)
+* [Better Errors](https://github.com/charliesome/better_errors)
+* [Bootstrap](http://getbootstrap.com/)
+* [RSpec](http://rspec.info/)
+* [Shoulda-Matchers](https://github.com/thoughtbot/shoulda-matchers)
+* [Rails 12factor](https://github.com/heroku/rails_12factor)
 
 
 ## Author
