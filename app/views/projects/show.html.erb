@@ -18,11 +18,11 @@
     <br>
     <ul>
       <% @project.stories.each do |story| %>
-      <li><p><%= story.name %></p>&nbsp;&nbsp;
+      <li><p><%= story.name %>&nbsp;&nbsp;
         <a href="/projects/<%= @project.id %>/stories/<%= story.id %>"
          data-confirm="You sure?"
          data-method="delete"
-         rel="nofollow"><span class="glyphicon glyphicon-remove"></span></a></li>
+         rel="nofollow"><span class="glyphicon glyphicon-remove text-danger"></span></a></p></li>
       <% end %>
     </ul>
   </div>
