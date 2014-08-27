@@ -3,7 +3,10 @@
     <h1><%= @project.name %></h1>
     <br>
     <p><a href="/projects/<%= @project.id %>/edit">Edit Project</a></p>
-    <p><a href="/projects/<%= @project.id %>/destroy">Delete Project</a></p>
+    <p><a href="/projects/<%= @project.id %>"
+      data-confirm="You sure?"
+      data-method="delete"
+      rel="nofollow">Delete Project</a></p>
     <p><a href="/projects">All Projects</a></p>
     <br>
     <p><a><%= @project.link %></a></p>
