@@ -10,8 +10,14 @@
       rel="nofollow">Delete Project</a></p>
     <p><a href="/projects">All Projects</a></p>
     <br>
+    <h3><%= @project.description %></h3>
     <p><a><%= @project.link %></a></p>
-    <p><%= @project.description %></p>
-
+    <br>
+    <h3>User Stories</h3>
+    <ul>
+      <% @project.stories.each do |story| %>
+      <li><p><%= story.name %></p></li>
+      <% end %>
+    </ul>
   </div>
 </div>
