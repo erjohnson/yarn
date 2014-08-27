@@ -27,4 +27,13 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     render('projects/edit.html.erb')
   end
+  
+  def update
+    @project = Project.find(params[:id])
+    if @project.update(params[:project])
+      redirect_to("/projects/#{@project.id}")
+    else
+      render('projects/edit.html.erb')
+    end
+  end
 end
