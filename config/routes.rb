@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   match('projects', {:via => :post, :to => 'projects#create'})
   match('projects/:id', {:via => :get, :to => 'projects#show'})
   match('projects/:id/edit', {:via => :get, :to => 'projects#edit'})
+  match('projects/:id', {:via => [:patch, :put], :to => 'projects#update'})
 end
