@@ -16,7 +16,11 @@
     <h3>User Stories</h3>
     <ul>
       <% @project.stories.each do |story| %>
-      <li><p><%= story.name %></p></li>
+      <li><p><%= story.name %></p>&nbsp;&nbsp;
+        <a href="/projects/<%= @project.id %>/stories/<%= story.id %>"
+         data-confirm="You sure?"
+         data-method="delete"
+         rel="nofollow"><span class="glyphicon glyphicon-remove"></span></a></li>
       <% end %>
     </ul>
   </div>
