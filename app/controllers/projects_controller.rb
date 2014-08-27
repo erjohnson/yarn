@@ -36,4 +36,10 @@ class ProjectsController < ApplicationController
       render('projects/edit.html.erb')
     end
   end
+  
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+    render('projects/destroy.html.erb')
+  end
 end
