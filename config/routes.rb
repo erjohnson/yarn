@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   match('projects/:id', {:via => [:patch, :put], :to => 'projects#update'})
   match('projects/:id', {:via => :delete, :to => 'projects#destroy'})
   match('projects/:project_id/stories/new', {:via => :get, :to => 'stories#new'})
+  match('projects/:project_id/stories', {:via => :post, :to => 'stories#create'})
 end
