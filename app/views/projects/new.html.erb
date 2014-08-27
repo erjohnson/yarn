@@ -8,7 +8,7 @@
     <h3>Please fix these errors:</h3>
     <ul>
       <% @project.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+      <li><p class="text-danger"><%= message %></p></li>
       <% end %>
     </ul>
     <% end %>
