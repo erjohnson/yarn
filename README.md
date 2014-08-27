@@ -1,15 +1,15 @@
-# User Stories
+# Yarn
 
 This project is for the [Ruby on Rails Basics assessment](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment) at [Epicodus](http://www.epicodus.com/).
 
 
-**User Stories** is a user story management app.  A user can create projects and give each project a set of stories.  
+**Yarn** is a user story management app.  A user can create projects and give each project a set of stories.
 
 In software development a [user story](http://en.wikipedia.org/wiki/User_story) is one or more sentences in the everyday language of the end user that captures what a user does, needs, or wants to do within the context of an application. User stories provide a description or use-case for functions an application should provide.
 
-An example user story: 
+An example user story:
 
->As a store-owner, I want to search for my customers by their first and last names. 
+>As a store-owner, I want to search for my customers by their first and last names.
 
 
 ## Installation
