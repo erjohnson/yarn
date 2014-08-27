@@ -6,6 +6,7 @@ class StoriesController < ApplicationController
   end
 
   def create
+    project = Project.find(params[:project_id])
     @story = project.stories.new(params[:story])
     if @story.save
       redirect_to("/projects/#{@story.project_id}")
