@@ -1,6 +1,14 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <h1>Create New Project</h1>
+    <% if @project.errors.any? %>
+    <h3>Please fix these errors:</h3>
+    <ul>
+      <% @project.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
+    <% end %>
     <form action="/projects/<%= @project.id %>" method="post">
       <div class="form-group">
         <label for="project_name">Name</label>
