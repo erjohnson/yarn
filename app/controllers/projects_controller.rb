@@ -22,4 +22,9 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     render('projects/show.html.erb')
   end
+  
+  def edit
+    @project = Project.find(params[:id])
+    render('projects/edit.html.erb')
+  end
 end
